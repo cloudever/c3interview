@@ -1,0 +1,15 @@
+query GetUsers {
+  Users {
+    ID,
+    Login,
+    AvatarURL
+  }
+}
+
+query GetUserByID ($id: ID) {
+  User(ID: $id) {
+    ID,
+    Login,
+    AvatarURL
+  }
+}
